@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+class Car{
+  public:
+  string brand;
+  string model;
+  string year;
+  void speed(){
+      cout<<"speed of car is 400kmph:"<<brand<<endl;
+  }
+};
+int main()
+{
+    Car c1;
+    c1.brand="BMW";
+    c1.model="x5";
+    c1.year="2022";
+    Car c2;
+    cout<<" brand of car is:" << c1.brand<<endl;
+    cout<<"model of car is:"<< c1.model<<endl;
+    cout<<"year of car is:"<<c1.year<<endl;
+    c2.brand="Audi";
+    c2.model="Q8";
+    c2.year="2019";
+    cout<<"brand of second car:"<< c2.brand<<endl;
+    cout<<"model of car:"<<c2.model<<endl;
+    c2.speed();
+}
+
+
+
+
+
+
