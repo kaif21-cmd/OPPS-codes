@@ -1,0 +1,29 @@
+Parameterized constructor.
+Making a student record.
+#include<iostream>
+using namespace std;
+class Student{
+    public:
+    int enrol;
+    string name;
+    string course;
+    Student(int i,string n,string m){
+        enrol=i;
+        name=n;
+        course=m;
+    }
+    void display(){
+        cout<<enrol<<" "<<name<<" "<<course<<endl;
+    }
+};
+int main(){
+    cout<<"enrol"<<" "<<"name"<<" "<<"course"<<endl;
+    Student s1(153 ," kaif " ," CSE ");
+    Student s2(249, " zara "  ," CSE ");
+    Student s3(207, " srk mirza " , " CSE ");
+    
+    s1.display();
+    s2.display();
+    s3.display();
+}
+
