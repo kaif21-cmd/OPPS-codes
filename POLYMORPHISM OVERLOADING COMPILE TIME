@@ -1,0 +1,56 @@
+#include<iostream>
+using namespace std;
+class add{
+    public:
+    void sum(int a,int b){
+        int c=a+b;
+        cout<<"Addition of two number::"<<c<<endl;
+    }
+    void sum(int a,int b, int d){
+        int c=a+b+d;
+        cout<<"Addition of three number::"<<c<<endl;
+    }
+    void sum(int a,int b,int d,int e){
+        int c=a+b+d+e;
+    cout<<"Addition of three number::"<<c<<endl;
+    }
+};
+int main(){
+    add a1;
+    a1.sum(2,4);
+    a1.sum(2,4,6);
+    a1.sum(2,4,6,8);
+}
+
+Example 2:-
+#include<iostream>
+using namespace std;
+class robot{
+    public:
+    string name;
+    int age;
+    void printInfo(string x){
+        name=x;
+        cout<<"Name of the robot::"<<name<<endl;
+    }
+    void printInfo(int i){
+        age=i;
+        cout<<"Age of the robot::"<<age<<endl;
+    }
+    void printInfo(string x,int i){
+        name=x;
+        age=i;
+        cout<<"name and age of the robot is::"<<name <<" " <<age <<endl;
+    }
+};
+int main()
+{
+     robot r1;
+    r1.printInfo("IRON MAN");
+    r1.printInfo(22);
+    r1.printInfo("IRON MAN",22);
+    robot r2;
+    r2.printInfo("SPIDER MAN");
+    r2.printInfo(22);
+    r2.printInfo("SPIDER MAN",22);
+}
