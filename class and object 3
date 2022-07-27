@@ -1,0 +1,40 @@
+MAKING PERSON;
+#include<iostream>
+using namespace std;
+class Person{
+    public:
+    string name;
+    int age;
+    void display(){
+        cout<<"Name of the student::"<<name<<endl;
+        cout<<"Age of the student::"<<age<<endl;
+    }
+    void eat(){
+        cout<<name<<" is eating\n";
+    }
+    void walk(){
+        cout<<name<<" is walking\n";
+    }
+};
+int main()
+{
+    Person p1;
+    p1.name="kaif";
+    p1.age=22;
+    p1.display();
+    p1.eat();
+    p1.walk();
+    Person p2;
+    p2.name="zara";
+    p2.age=21;
+    p2.display();
+    p2.eat();
+    p2.walk();
+}
+
+
+
+
+
+
+
