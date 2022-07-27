@@ -1,0 +1,35 @@
+Making a Robot.
+#include<iostream>
+using namespace std;
+class Robot{
+    public:
+    int age;
+    string name;
+    void printname()
+    {
+        cout<<"name of the my new robot::"<<name<<endl;
+    }
+    void working()
+    {
+        cout<< name<<" is doing work\n";
+    }
+    void lp()
+    {
+        cout<< name<<" is loading some program in jarvis\n";
+    }
+    
+};
+int main(){
+    Robot r1;
+    r1.name="kaif";
+    r1.printname();
+    r1.working();
+    r1.lp();
+    
+    Robot r2;
+    r2.name="spiderman";
+    r2.printname();
+    r2.working();
+    r2.lp();
+}
+
