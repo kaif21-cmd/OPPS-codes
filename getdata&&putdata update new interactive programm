@@ -1,0 +1,61 @@
+#include<iostream>
+using namespace std;
+class employee
+{
+    char name[30];
+    float age;
+    public:
+    void getdata(void);
+    void putdata(void);
+    
+};
+void employee::getdata(void)
+{
+    cout<<"Enter name:";
+    cin>>name;
+    cout<<"Enter the age:";
+    cin>>age;
+}
+void employee::putdata(void)
+{
+    cout<<"Name:"<<name<<"\n";
+    cout<<"Age:"<<age<<"\n";
+}
+const int size=3;
+int main()
+{
+    employee manager[size];
+    for(int i=0;i<size;i++)
+    {
+        cout<<"\n Details of manager"<<i+1<<"\n";
+        manager[i].getdata();
+    }
+    cout<<"\n";
+    for( int i=0;i<size;i++)
+    {
+        cout<<"\n Manager"<<i+1<<"\n";
+        manager[i].putdata();
+    }
+}
+output__________________________________________________________________________
+/tmp/Se1D4arJFl.o
+Details of manager1
+Enter name:kaif 
+Enter the age:21
+Details of manager2
+Enter name:arham
+Enter the age:21
+Details of manager3
+Enter name:nadeem
+Enter the age:21
+Manager1
+Name:kaif
+Age:21
+
+ Manager2
+Name:arham
+Age:21
+
+ Manager3
+Name:nadeem
+Age:21
