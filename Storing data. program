@@ -1,0 +1,48 @@
+#include<iostream>
+using namespace std;
+class student
+{
+    char name[30];
+    char department[30];
+    char course[30];
+    int age;
+    public:
+    void getdata(void);
+    void putdata(void);
+};
+void student::getdata(void)
+{
+    cout<<"Enter the name of the student:\n";
+    cin>>name;
+    cout<<"Enter the age:\n";
+    cin>>age;
+    cout<<"Enter the Department:\n";
+    cin>>department;
+    cout<<"Enter the course:\n";
+    cin>>course;
+}
+void student::putdata(void)
+{
+    cout<<"Name:"<<name<<endl;
+    cout<<"Age:"<<age<<endl;
+    cout<<"Department:"<<department<<endl;
+    cout<<"Course:"<<course<<endl;
+}
+const int size=2;
+int main()
+{
+    student s[size];
+    for(int i=0;i<size;i++)
+    {
+        
+        cout<<"Details of students"<<i+1<<"\n";
+        cout<<"\n---------------------------------\n";
+        s[i].getdata();
+    }
+    cout<<"\n";
+    for(int i=0;i<size;i++)
+    {
+        cout<<"\nstudent"<<i+1<<"\n";
+        s[i].putdata();
+    }
+}
