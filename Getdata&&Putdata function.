@@ -1,0 +1,126 @@
+#include<iostream>
+using namespace std;
+class person
+{
+    char name[30];
+    int age;
+    public:
+    void getdata(void);
+    void display(void);
+};
+void person :: getdata(void)
+{
+    cout<<"Enter the name:";
+    cin>>name;
+    cout<<"Enter the age:";
+    cin>>age;
+}
+void person :: display(void)
+{
+    cout<<"\n Name:: "<<name;
+    cout<<"\n Age:: "<<age;
+}
+int main()
+{
+    
+    person p;
+    person p2;
+    person p3;
+    p.getdata();
+    p2.getdata();
+    p3.getdata();
+    cout<<"MY DATA\n";
+    p.display();
+    p2.display();
+    p3.display();
+}
+
+
+ANOTHER EXAPMPLE-----------------------------------------------------
+---------------------------------------------------------------------------
+#include<iostream>
+using namespace std;
+class person
+{
+    string name;
+    float cost;
+    public:
+    void getdata(void);
+    void display(void);
+};
+void person :: getdata(void)
+{
+    cout<<"Enter the name:";
+    cin>>name;
+    cout<<"Enter the cost:";
+    cin>>cost;
+}
+void person :: display(void)
+{
+    cout<<"\n Name:: "<<name;
+    cout<<"\n cost:: "<<cost;
+}
+int main()
+{
+    
+    person p;
+    person p2;
+    person p3;
+    p.getdata();
+    p2.getdata();
+    p3.getdata();
+    cout<<"MY DATA\n";
+    p.display();
+    p2.display();
+    p3.display();
+}
+OUTPUT:-
+/tmp/Se1D4arJFl.o
+Enter the name:oneplus
+Enter the cost:49000
+Enter the name:iphone
+Enter the cost:52000
+Enter the name:google
+Enter the cost:82000
+MY DATA
+
+ Name:: oneplus
+ cost:: 49000
+ Name:: iphone
+ cost:: 52000
+ Name:: google
+ cost:: 82000
+ ANOTHER EXAMPLE----------------------------------------------------------------------------------------------
+ ----------------------------------------------------------------------
+ #include<iostream>
+ using namespace std;
+ class item
+ {
+     string name;
+     float cost;
+     public:
+     void getdata(string a,int b);
+     void putdata(void)
+     {
+         cout<< "Product :" <<name <<"\n";
+         cout<< "Rate:" <<cost <<"\n";
+     }
+ };
+ void item :: getdata( string a,int b)
+ {
+     name=a;
+     cost=b;
+ }
+ int main()
+ {
+     item x;
+     cout<<"\n prdocut name and rate " <<"\n";
+     x.getdata("kaif",299.5);
+     x.putdata();
+ }
+ OUTPUT:-
+prdocut name and rate 
+Product :kaif
+Rate:299
+
+ 
